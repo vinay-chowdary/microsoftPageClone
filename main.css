@@ -1,0 +1,442 @@
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: #fff;
+  color: #000;
+  font-size: 15px;
+  line-height: 1.5;
+  /* position: relative; */
+}
+a {
+  color: #262626;
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+main,
+nav.main-nav {
+  width: 95%;
+  max-width: 1500px;
+  margin: auto;
+}
+
+/* nav-bar styling section 1 */
+
+.menu-btn {
+  position: absolute;
+  z-index: 2;
+  cursor: pointer;
+  top: 18px;
+  right: 18px;
+  display: none;
+}
+
+.menu-btn:hover {
+  opacity: 0.5;
+}
+
+.main-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  justify-items: center;
+  font-size: 13px;
+  height: 60px;
+}
+.main-nav .logo {
+  width: 110px;
+}
+.main-nav ul {
+  display: flex;
+}
+.main-nav ul.main-menu {
+  flex: 1;
+  margin-left: 20px;
+}
+.main-nav ul.right-menu span {
+  margin-right: 5px;
+}
+.main-nav .menu-item {
+  padding: 0 15px;
+}
+.main-nav ul li a {
+  padding-bottom: 2px;
+}
+.main-nav ul.main-menu li.menu-item a:hover,
+.main-nav ul.right-menu li.menu-item:hover span {
+  border-bottom: 2px solid #262626;
+}
+
+/* styling sub-menu */
+
+ul.sub-menu {
+  width: 80%;
+  background: #f2f2f2;
+  position: absolute;
+  right: 25px;
+  top: 40px;
+  display: none;
+  opacity: 0.9;
+}
+ul.sub-menu > li {
+  margin: 20px;
+}
+ul.sub-menu > li > h4 {
+  margin: 16px 0;
+}
+ul.sub-menu li ul {
+  flex-direction: column;
+}
+ul.sub-menu li ul li {
+  display: inline-flex;
+  height: 50px;
+  align-items: center;
+}
+ul.sub-menu li ul li a:hover {
+  padding: 0;
+  border-bottom: 2px solid #262626;
+}
+.sub-nav:hover .sub-menu {
+  display: flex;
+  justify-content: space-around;
+}
+
+/* showcase styling section 2*/
+
+#showcase {
+  height: 600px;
+  background: url("images/showcase-img.jpeg") no-repeat right/cover;
+}
+.btn {
+  cursor: pointer;
+  display: inline-block;
+  background-color: #262626;
+  color: #fff;
+  padding: 10px 20px;
+  font-weight: bold;
+  margin-top: 15px;
+}
+.btn:hover {
+  opacity: 0.9;
+}
+.btn:hover span {
+  border-bottom: 2px solid #fff;
+}
+
+.showcase-header {
+  width: 90%;
+  height: 100%;
+  display: flex;
+  margin: auto;
+  align-items: center;
+}
+
+.showcase-header .content h1 {
+  font-size: 2.75rem;
+}
+
+/* shopping products : section 3  */
+
+.shop-products {
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.shop-container {
+  display: flex;
+}
+.shop-products .shop-container a {
+  display: inline-block;
+  text-align: center;
+  flex: 1;
+  margin: 0 10px;
+  font-weight: bold;
+  padding: 15px 5px;
+}
+
+.shop-products .shop-container a:active {
+  background: rgb(233, 233, 233);
+}
+.shop-products .shop-container a:hover p {
+  text-decoration: underline #262626;
+}
+
+/* section 4 cards */
+
+.cards-sec {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+  padding: 10px 0;
+  margin-bottom: 30px;
+}
+.card {
+  cursor: pointer;
+}
+.card:hover {
+  opacity: 0.9;
+}
+.card img {
+  width: 100%;
+  margin-bottom: 20px;
+}
+.card-content {
+  margin: 20px auto;
+}
+
+.card-content h3 {
+  font-weight: 900;
+  font-size: 1.2rem;
+}
+
+.card-content p {
+  width: 90%;
+}
+.card .card-links {
+  display: flex;
+}
+.card .card-content a {
+  display: inline-block;
+  padding: 10px 0;
+  margin-right: 20px;
+  color: #0067b8;
+  font-weight: bolder;
+}
+
+.card .card-links a:nth-child(1) {
+  flex: 1.5;
+}
+
+.card .card-links a:nth-child(2) {
+  flex: 2.8;
+}
+.card .card-content a:hover span {
+  border-bottom: 2px solid #0067b8;
+}
+.card .card-content a:hover i {
+  margin-left: 5px;
+}
+
+/* Xbox section :setion 5*/
+
+#Xbox {
+  height: 550px;
+  background: url("images/gaming.jpeg") no-repeat right/cover;
+  margin-bottom: 25px;
+}
+
+/* social-links */
+
+#social-sites {
+  display: flex;
+  align-items: center;
+  margin: 30px auto 50px;
+}
+#social-sites img {
+  width: 25px;
+}
+#social-sites * {
+  margin: auto 5px;
+}
+
+/* footer */
+
+footer {
+  background: #f2f2f2;
+  color: #505050;
+  font-size: 11px;
+}
+
+.links,
+.footer-inner {
+  max-width: 1500px;
+  width: 95%;
+  margin: auto;
+  padding: 20px 0px;
+}
+footer .links {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 20px;
+}
+
+footer .links li {
+  line-height: 3;
+}
+footer a {
+  opacity: 0.7;
+}
+footer a:hover {
+  opacity: 1;
+  text-decoration: underline;
+}
+.footer-inner,
+.footer-inner div,
+.footer-inner ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer-inner i {
+  margin-right: 10px;
+}
+.footer-inner ul {
+  justify-content: start;
+  flex-wrap: wrap;
+}
+
+.footer-inner ul li {
+  margin: 5px 15px;
+}
+
+/*
+ *
+  media-queries 
+  1.for Tablets
+ *
+ *
+ */
+
+@media (max-width: 900px) {
+  .menu-btn {
+    display: block;
+  }
+
+  .main-nav ul.main-menu {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-left: 0;
+    transform: translate(-500px);
+    z-index: 2;
+    background: #f2f2f2;
+    width: 40%;
+    height: 100%;
+    opacity: 0.9;
+    padding: 30px;
+    transition: transform 0.3s ease-in-out;
+  }
+  .main-nav ul.main-menu li {
+    padding: 10px;
+    font-size: 15px;
+    line-height: 3;
+  }
+  .main-nav ul.show-menu {
+    transform: translate(0);
+  }
+  .main-nav ul.right-menu li:last-child {
+    margin-right: 30px;
+  }
+
+  /* sub-menu */
+
+  ul.sub-menu {
+    width: 50%;
+    z-index: 3;
+  }
+
+  .sub-nav:hover .sub-menu {
+    display: inline-block;
+  }
+
+  #showcase,
+  #Xbox {
+    height: 400px;
+  }
+
+  .showcase-header .content h1 {
+    font-size: 2rem;
+  }
+
+  .content p {
+    width: 60%;
+  }
+
+  .cards-sec {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .card-links {
+    flex-direction: column;
+  }
+
+  footer .links {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* for mobile sized screens */
+
+@media (max-width: 600px) {
+  .main-nav ul.main-menu {
+    width: 50%;
+  }
+  .main-nav ul.right-menu li:nth-child(2) span,
+  .main-nav ul.right-menu li:last-child span {
+    display: none;
+  }
+
+  #Xbox {
+    background: url("images/gaming.jpeg") no-repeat right/cover;
+  }
+
+  .showcase-header {
+    align-items: flex-start;
+  }
+  .content {
+    margin-top: 50px;
+  }
+  #Xbox .content p {
+    width: 35%;
+  }
+  .btn {
+    margin-top: 30px;
+    font-size: 0.8rem;
+  }
+  .shop-products {
+    height: fit-content;
+    margin: 50px auto;
+  }
+  .shop-container {
+    flex-direction: column;
+  }
+  .shop-products .shop-container a {
+    padding: 10px 0;
+    margin: 10px 0;
+    display: inline-flex;
+    align-items: center;
+  }
+  .shop-products .shop-container a img {
+    width: 25px;
+    margin-right: 10px;
+  }
+  .cards-sec {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .card-links {
+    flex-direction: column;
+  }
+  footer .links {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .footer-inner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .footer-inner div {
+    margin-bottom: 20px;
+    margin-left: 10px;
+  }
+  .footer-inner div i {
+    font-size: 20px;
+    margin-right: 5px;
+  }
+}
